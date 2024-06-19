@@ -16,7 +16,7 @@ width, height = img.size
 csv_file = "V10"
 with open(csv_file, mode='w', newline='') as file:
     writer = csv.writer(file)
-
+    writer.writerow([width, height])
 
     for y in range(height):
         for x in range(width):
